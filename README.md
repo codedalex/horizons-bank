@@ -1,103 +1,65 @@
+# 📚 Horizons Banking 
+
 <div align="center">
-  <br />
-    <a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank">
-      <img src="https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4" alt="Project Banner">
-    </a>
-  <br />
-  
-  <div>
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
-  </div>
-
-  <h3 align="center">A Fintech Bank Application</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+  <h1>A Comprehensive Guide to Developing the Financial Management App</h1>
+  <img src="https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4" alt="Project Banner" width="600" />
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+## 🚀 Table of Contents
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Code Snippets to Copy](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+1. [Introduction](#introduction)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [Getting Started](#getting-started)
+5. [Project Structure](#project-structure)
+6. [Environment Variables](#environment-variables)
+7. [Running the Project](#running-the-project)
+8. [API Integration](#api-integration)
+9. [Contributing](#contributing)
+10. [License](#license)
 
-## 🚨 Tutorial
+## 🤖 Introduction
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+Welcome to the Financial Management App! This application is built with Next.js and TypeScript, providing users with a seamless experience to manage their finances, connect multiple bank accounts, and track transactions in real-time.
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## ⚙️ Tech Stack
 
-<a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+- **Next.js**: A React framework for server-side rendering.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Appwrite**: A backend server for managing user authentication and data.
+- **Plaid**: A service for connecting bank accounts.
+- **Dwolla**: A payment platform for transferring funds.
+- **TailwindCSS**: A utility-first CSS framework for styling.
+- **Zod**: A TypeScript-first schema declaration and validation library.
 
-## <a name="introduction">🤖 Introduction</a>
+## 🔋 Features
 
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether. 
+- **User Authentication**: Secure sign-up and login functionality.
+- **Bank Account Integration**: Connect multiple bank accounts using Plaid.
+- **Transaction Tracking**: View and filter transactions in real-time.
+- **Funds Transfer**: Transfer money between users using Dwolla.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Appwrite
-- Plaid
-- Dwolla
-- React Hook Form
-- Zod
-- TailwindCSS
-- Chart.js
-- ShadCN
-
-## <a name="features">🔋 Features</a>
-
-👉 **Authentication**: An ultra-secure SSR authentication with proper validations and authorization
-
-👉 **Connect Banks**: Integrates with Plaid for multiple bank account linking
-
-👉 **Home Page**: Shows general overview of user account with total balance from all connected banks, recent transactions, money spent on different categories, etc
-
-👉 **My Banks**: Check the complete list of all connected banks with respective balances, account details
-
-👉 **Transaction History**: Includes pagination and filtering options for viewing transaction history of different banks
-
-👉 **Real-time Updates**: Reflects changes across all relevant pages upon connecting new bank accounts.
-
-👉 **Funds Transfer**: Allows users to transfer funds using Dwolla to other accounts with required fields and recipient bank ID.
-
-👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
-
-and many more, including code architecture and reusability. 
-
-## <a name="quick-start">🤸 Quick Start</a>
+## 🤸 Getting Started
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
+### Prerequisites
 
-Make sure you have the following installed on your machine:
+Make sure you have the following installed:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [npm](https://www.npmjs.com/)
 
-**Cloning the Repository**
+### Cloning the Repository
 
 ```bash
 git clone https://github.com/adrianhajdin/banking.git
 cd banking
 ```
 
-**Installation**
+### Installation
 
 Install the project dependencies using npm:
 
@@ -105,15 +67,30 @@ Install the project dependencies using npm:
 npm install
 ```
 
-**Set Up Environment Variables**
+## 📦 Project Structure
+
+The project is organized as follows:
+
+```
+/banking
+├── /components          # Reusable UI components
+├── /lib                 # Utility functions and API clients
+├── /pages               # Next.js pages
+├── /public              # Static assets
+├── /styles              # Global styles
+├── /types               # TypeScript type definitions
+└── /utils               # Helper functions
+```
+
+## 🌍 Environment Variables
 
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-#NEXT
+# NEXT
 NEXT_PUBLIC_SITE_URL=
 
-#APPWRITE
+# APPWRITE
 NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
 NEXT_PUBLIC_APPWRITE_PROJECT=
 APPWRITE_DATABASE_ID=
@@ -122,63 +99,160 @@ APPWRITE_BANK_COLLECTION_ID=
 APPWRITE_TRANSACTION_COLLECTION_ID=
 APPWRITE_SECRET=
 
-#PLAID
-PLAID_CLIENT_ID=
-PLAID_SECRET=
-PLAID_ENV=
-PLAID_PRODUCTS=
-PLAID_COUNTRY_CODES=
-
-#DWOLLA
-DWOLLA_KEY=
-DWOLLA_SECRET=
-DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
-DWOLLA_ENV=sandbox
-
-```
-
-Replace the placeholder values with your actual respective account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io/?utm_source=youtube&utm_content=reactnative&ref=JSmastery), [Plaid](https://plaid.com/) and [Dwolla](https://www.dwolla.com/)
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="snippets">🕸️ Snippets</a>
-
-<details>
-<summary><code>.env.example</code></summary>
-
-```env
-#NEXT
-NEXT_PUBLIC_SITE_URL=
-
-#APPWRITE
-NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
-NEXT_PUBLIC_APPWRITE_PROJECT=
-APPWRITE_DATABASE_ID=
-APPWRITE_USER_COLLECTION_ID=
-APPWRITE_BANK_COLLECTION_ID=
-APPWRITE_TRANSACTION_COLLECTION_ID=
-APPWRITE_SECRET=
-
-#PLAID
+# PLAID
 PLAID_CLIENT_ID=
 PLAID_SECRET=
 PLAID_ENV=sandbox
 PLAID_PRODUCTS=auth,transactions,identity
 PLAID_COUNTRY_CODES=US,CA
 
-#DWOLLA
+# DWOLLA
 DWOLLA_KEY=
 DWOLLA_SECRET=
 DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
 DWOLLA_ENV=sandbox
 ```
 
+Replace the placeholder values with your actual account credentials.
+
+## 🏃 Running the Project
+
+To run the project locally, use the following command:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## 🔗 API Integration
+
+### Plaid Integration
+
+To connect bank accounts, the app uses Plaid's API. The following functions are essential:
+
+- **createLinkToken**: Generates a link token for the Plaid Link.
+- **exchangePublicToken**: Exchanges the public token for an access token.
+
+### Dwolla Integration
+
+For transferring funds, the app integrates with Dwolla. Key functions include:
+
+- **createFundingSource**: Creates a funding source using a Plaid processor token.
+- **createTransfer**: Initiates a transfer between accounts.
+
+
+## 🗄️ Setting Up the Appwrite Database
+
+To set up the Appwrite database for the Financial Management App, follow these steps:
+
+### 1. Create a New Database
+
+1. Log in to your Appwrite console.
+2. Navigate to the **Databases** section.
+3. Click on **Add Database**.
+4. Enter a name for your database (e.g., `FinancialManagement`).
+5. Click **Create**.
+
+### 2. Create Collections
+
+You will need to create the following collections within your database:
+
+#### a. Users Collection
+
+- **Collection Name**: `users`
+- **Attributes**:
+  - `email` (String, required) - User's email address.
+  - `userId` (String, required) - Unique identifier for the user.
+  - `dwollaCustomerUrl` (String, required) - URL for the user's Dwolla customer profile.
+  - `dwollaCustomerId` (String, required) - Unique identifier for the Dwolla customer.
+  - `firstName` (String, required) - User's first name.
+  - `lastName` (String, required) - User's last name.
+  - `address1` (String, required) - User's primary address.
+  - `city` (String, required) - User's city.
+  - `postalCode` (String, required) - User's postal code.
+  - `dateOfBirth` (String, required) - User's date of birth.
+  - `ssn` (String, optional) - User's Social Security Number (if applicable).
+  - `state` (String, required) - User's state of residence.
+
+#### b. Banks Collection
+
+- **Collection Name**: `banks`
+- **Attributes**:
+  - `accountId` (String, required) - Unique identifier for the bank account.
+  - `bankId` (String, required) - Reference to the bank institution.
+  - `accessToken` (String, required) - Token used to access the bank account.
+  - `fundingSourceUrl` (String, required) - URL for the funding source.
+  - `shareableId` (String, required) - Unique identifier for sharing the bank account.
+  - `userId` (String, required) - Reference to the `users` collection.
+
+#### c. Transactions Collection
+
+- **Collection Name**: `transactions`
+- **Attributes**:
+  - `bankId` (String, required) - Reference to the `banks` collection.
+  - `name` (String, required).
+  - `amount` (Float, required).
+  - `date` (Date, required).
+  - `channel` (String, optional).
+  - `category` (String, optional).
+  - `senderBankId` (String, required).
+
+### 3. Set Up Relationships
+
+To establish relationships between collections:
+
+- In the **Users** collection, ensure that the `userId` attribute is unique.
+- In the **Banks** collection, the `userId` attribute should reference the `users` collection.
+- In the **Transactions** collection, the `bankId` attribute should reference the `banks` collection.
+
+### 4. Create Permissions
+
+Set up the necessary permissions for each collection based on your application's requirements. For example:
+
+- **Users Collection**: Allow read and write access to authenticated users.
+- **Banks Collection**: Allow read and write access to the user who owns the bank account.
+- **Transactions Collection**: Allow read access to the user who owns the bank account and write access for creating transactions.
+
+### 5. Testing the Setup
+
+After creating the database and collections, you can test the setup by using the Appwrite SDK to create, read, update, and delete documents in your collections.
+
+### Example Code to Create a User
+
+Here’s an example of how to create a user in the `users` collection using the Appwrite SDK:
+
+```typescript
+import { Client, Account } from "appwrite";
+
+const client = new Client();
+client.setEndpoint('https://YOUR_APPWRITE_ENDPOINT/v1').setProject('YOUR_PROJECT_ID');
+
+const account = new Account(client);
+
+const createUser = async (email: string, password: string, firstName: string, lastName: string) => {
+  try {
+    const user = await account.create(ID.unique(), email, password, `${firstName} ${lastName}`);
+    console.log('User created:', user);
+  } catch (error) {
+    console.error('Error creating user:', error);
+  }
+};
+```
+
+### Conclusion
+
+By following these steps, you will have a fully functional Appwrite database set up for your Financial Management App. Make sure to adjust the permissions and relationships according to your application's needs.
+```
+
+### Summary of Changes:
+- Added a new section titled "Setting Up the Appwrite Database."
+- Provided detailed instructions on creating the database, collections, attributes, and relationships.
+- Included example code for creating a user in the `users` collection.
+
+Feel free to adjust the content as necessary to fit your project's specific requirements!
+
+ ## 📝 Additional Resources and Snippets
 </details>
 
 <details>
@@ -1407,7 +1481,7 @@ export default PaymentTransferForm;
 </details>
 
 <details>
-<summary><code>Missing from the video (top right on the transaction list page) BankDropdown.tsx</code></summary>
+<summary><code> BankDropdown.tsx</code></summary>
 
 ```typescript
 "use client";
@@ -1618,25 +1692,21 @@ export const Category = ({ category }: CategoryProps) => {
 
 Assets used in the project can be found [here](https://drive.google.com/file/d/1TVhdnD97LajGsyaiNa6sDs-ap-z1oerA/view?usp=sharing)
 
-## <a name="more">🚀 More</a>
 
-**Advance your skills with Next.js 14 Pro Course**
+## 🤝 Contributing
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+We welcome contributions! If you would like to contribute to this project, please follow these steps:
 
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-<br />
-<br />
+## 📄 License
 
-**Accelerate your professional journey with the Expert Training program**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
+---
 
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+Thank you for checking out the Financial Management App documentation! We hope this guide helps you in developing and contributing to the project. If you have any questions, feel free to reach out to the community or the maintainers.

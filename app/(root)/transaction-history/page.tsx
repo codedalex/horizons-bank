@@ -6,9 +6,16 @@ import { getLoggedInUser } from '@/lib/actions/user.actions';
 import { formatAmount } from '@/lib/utils';
 import React from 'react'
 
-const TransactionHistory = async ({ searchParams: { id, page }}:SearchParamProps) => {
+const TransactionHistory = async ({ searchParams }: { searchParams: SearchParamProps }) => {
+  const { id, page } = await searchParams; // Await the searchParams
   const currentPage = Number(page as string) || 1;
+
   const loggedIn = await getLoggedInUser();
+
+  if (!loggedIn) {
+    throw new Error("User is not logged in");
+  }
+
   const accounts = await getAccounts({ 
     userId: loggedIn.$id 
   })

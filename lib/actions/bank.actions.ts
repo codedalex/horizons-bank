@@ -80,6 +80,10 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
       bankId: bank.$id,
     });
 
+    if (!transferTransactionsData || !transferTransactionsData.documents) {
+      throw new Error("No transfer transactions found");
+    }
+
     const transferTransactions = transferTransactionsData.documents.map(
       (transferData: Transaction) => ({
         id: transferData.$id,
@@ -115,9 +119,11 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
     };
 
     // sort transactions by date such that the most recent transaction is first
-      const allTransactions = [...transactions, ...transferTransactions].sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
+      // lib/actions/bank.actions.ts
+      const allTransactions = [
+        ...(Array.isArray(transactions) ? transactions : []),
+        ...(Array.isArray(transferTransactions) ? transferTransactions : []),
+      ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return parseStringify({
       data: account,
